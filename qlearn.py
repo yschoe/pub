@@ -72,7 +72,7 @@ def parse_args():
   cmd.add_argument('--epsilon', type=float, default="0.5", help="discount rate")
   cmd.add_argument('--num_iter', type=int, default="300", help="number of iterations to run")
   cmd.add_argument('--run_avg_rate', type=float, default="0.95", help="number of iterations to run")
-  cmd.add_argument('--display_flag', type=str, default="True", help="number of iterations to run")
+  cmd.add_argument('--display_flag', type=str, default="True", help="display Q table after each iteration?")
 
   return cmd.parse_args()
 
