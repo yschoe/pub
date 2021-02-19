@@ -121,16 +121,22 @@ def df_diff(df1, df2):
 #----------------------------------------------------------------------------
 
 #--------------------
-# state index : modify
 #
-# layout =  (*) marks the goal. 
+# Environment layout =  (*) marks the goal. 
 # 
 # s0 s1 (s2)
 # s3 s4 s5 
 # 
-#   * (s1,right) and (s5,up) has reward 100, all others are 0.
-#   * All actions in s2 leads back to s2, with reward 0.
+#   * please see https://github.com/yschoe/pub  README.md for illustrations.
+#   * actions are up, down, left, right.
+#   * (s1,right) and (s5,up) has reward of 100, all others are 0.
+#   * All actions in the goal (s2) leads back to itself (s2), with reward 0.
+#   * -1 : means invalid state 
 #
+#--------------------
+
+#--------------------
+# state index : modify
 #--------------------
 s_index = ["s0", "s1", "s2", "s3", "s4", "s5"] 
 
