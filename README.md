@@ -16,3 +16,9 @@ The implemented environment example is from Tom Mitchell's machine learning text
 
 Note: V(s) and Q(s,a) assume a discount rate of 0.9.
 
+## spiral.ipynb
+
+Simple script to generate the spiral data. 
+
+Change two variables under "config" to adjust the data. 
+
